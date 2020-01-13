@@ -32,7 +32,6 @@ client.on('error', console.error);
 const iuJob = new cron({
     cronTime: '* * * * * *',
     onTick: function () {
-        // const guild = client.guilds.get('666153320171438080');
         const channel = client.channels.get(`666163948122537995`)
         channel.send("hi")
     },
